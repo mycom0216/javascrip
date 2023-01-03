@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 변수 키워드 var let const
+        // var : 재선언O, 재할당O
+        var name = "김운비";
+        var name = "박수현";
+        console.log(name);
+
+        // let : 재선언X, 재할당O
+        let age = 20;
+        age = 30;
+        console.log(age);
+        // let age = 30;
+        // Uncaught SyntaxError: Identifier 'age' has already been declared
+        // let이라서 재선언 불가능!
+
+        // const : 재선언X, 재할당X
+        const gender = "여자";
+        // gender = "남자";
+        // Assignment to constant variable.
+        // 상수변수에 할당하려고 한다 -> 오류발생
+
+    </script>
+
+</body>
+</html>
