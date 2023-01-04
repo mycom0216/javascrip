@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 점수 입력받기 -> 연산하기 위해서 형변환
+        var java = parseInt(prompt("Java점수 입력하세요!"));
+        var web = parseInt(prompt("Web점수 입력하세요!"));
+        var python = parseInt(prompt("Python점수 입력하세요!"));
+
+        // 2. 평균 및 학점 구하기 -> 조건문
+        var avg = (java+web+python)/3;
+
+        var score;
+        if(avg >= 90){
+            score = "A";
+        }else if(avg >=80){
+            score = "B";
+        }else if(avg >= 70){
+            score = "C";
+        }else{
+            score = "F";
+        }
+
+        // 3. 출력
+        console.log("당신의 평균은 "+avg+"이고, 학점은 "+score+"입니다.");
+    </script>
+</body>
+</html>
