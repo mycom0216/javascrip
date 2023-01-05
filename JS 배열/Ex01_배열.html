@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 배열
+        //  : 여러개의 데이터를 하나의 묶음으로 관리하는 자료구조(순서O)
+        //  : 배열에는 모든 데이터 타입 저장 가능(다른 타입도 저장 가능)
+        //  : 배열의 크기가 동적(크기를 지정해도, 데이터를 추가하면 자동으로 공간할당)
+        //  : 인덱스와 인덱스로 대응하며, 인덱스는 0부터 시작
+
+        // 2. 배열 선언
+        var nameList = [];
+        var nameList = new Array();
+
+        // 3. 배열 생성
+        var nameList = ["박지후","차동훈","위종일","양도근","반재영"];
+        console.log("[] : " + nameList);
+        var nameList = new Array("박지후","차동훈","위종일","양도근","반재영");
+        console.log("new Array : "+nameList);
+
+        // 다른 타입의 자료구조
+        var Me = ["반재영",20,true,"광주"];
+        console.log(Me);
+
+        // 4. 배열에 접근
+        // console.log(Me[0]);
+        // console.log(Me[1]);
+        // console.log(Me[2]);
+        // console.log(Me[3]);
+
+        for(var i = 0; i <= 3; i++){
+            console.log(Me[i])
+        }
+
+        // 5. 배열의 크기 -> 동적
+        // 배열.length
+        Me[4] = "스마트인재개발원";
+        console.log(Me[4]);
+
+        console.log("배열의 크기 : "+Me.length);
+
+        for(var i = 0; i < Me.length; i++){
+            console.log(Me[i]);
+        }
+
+        // length프로퍼티는 쓰기가 가능하다
+        // length의 값을 감소시키면 배열이 잘린다. 복구 불가
+        var arr = [1,2,3,4,5];
+        arr.length = 3; // 배열의 크기를 3으로 감소
+        console.log(arr); // [1,2,3]
+        arr.length = 5; // 본래의 길이로 돌리기
+        console.log(arr);  // 삭제된 데이터는 복구X [1,2,3,empty]
+        // 배열.length = 0; 배열을 간단하게 비울 수 있다.
+        // 6. 다차원 배열
+        var matrix = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ];
+        console.log(matrix[2][2]);
+    </script>
+</body>
+</html>

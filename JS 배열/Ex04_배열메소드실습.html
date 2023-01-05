@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ["apple", "avocado", "banana", "blueberry", "cherry", "dragon fruit", 
+   "fig", "grape", "kiwi", "lime", "mango", "orange", "oriental melon", "pear",
+    "peach", "pineapple", "shine muscat", "strawberry", "tomato", 
+   "water melon", "yuja"];
+    //    · fruits 의 마지막 아이템인 "yuja" 삭제하기 
+    fruits.pop();
+    document.write(fruits+"<hr>");
+    // · fruits 마지막에 "grapefruit" 추가하기
+    fruits.push("grapefruit");  
+    document.write(fruits+"<hr>");  
+    // · fruits마지막에 "cherry tomato", "pine nut", "korean blackberry" 추가하기
+    fruits.unshift("cherry tomato", "pine nut", "korean blackberry");
+    document.write(fruits+"<hr>");
+    // · fruits 에 "orange" 가 있는지 확인하기
+    var result = fruits.includes("orange");
+    document.write("orange 가 있는지? "+result+"<hr>");    
+    // · fruits 에 "kiwi" 가 있는지 확인하기    
+    result = fruits.indexOf("kiwi");
+    document.write("kiwi의 위치 "+result+"<hr>");   
+    
+    
+    // · fruits 에 "water melon"을 "melon" 로 변경하기
+    fruits[fruits.indexof("water melon")] = "melon";
+    document.write(fruits+"<hr>");
+    // · fruits 에 "lime" 부터 3개의 아이템을 기존 배열에서 삭제하기
+    fruits.splice(fruits.indexOf("lime"),3);
+    document.write(fruits+"<hr>");
+    
+    // · fruits 에 "shine muscat" 이후의 값을 제거하기
+    //  splice함수에서 삭제할 개수를 따로 작성하지 않으면
+    // 배열의 끝까지 데이터를 제거
+    fruits.splice(fruits.indexOf("shine muscat")+1);
+    document.write(fruits+"<hr>");
+    // · "p" 로 시작되는 아이템인 "pear" 부터 ”pineapple" 까지 가져와 새로운 배열에 저장하기 
+    var arr = fruits.slice(fruits.indexOf("pear"), fruits.indexOf("pineapple")+1);
+    document.write(arr+"<hr>");
+
+    </script>
+</body>
+</html>
