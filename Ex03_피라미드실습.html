@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 이모티콘을 입력받기
+        let emoji = prompt("이모티콘 입력");
+        // 2. 출력할 행의 개수 입력받기
+        let row = prompt("출력할 행의 개수 입력")
+
+        // 3. 결과 화면 출력하기 (HTML 문서내)
+        // 😎
+        // 😎😎
+        // 😎😎😎
+
+        // (1) 함수선언문
+        // function pyramid(emoji, row) {
+        //     for(let i=1; i<=row; i++){
+        //         for(let j=1; j<=i; j++){
+        //             document.write(emoji);
+        //         }
+        //         document.write("<br>");
+        //     }
+        // }
+        // pyramid(emoji, row);
+
+        // (2) 함수표현식
+        // let pyramid = function(emoji, row) {
+        //     for(let i=1; i<=row; i++) {
+        //         for(let j=1; j<=i; j++) {
+        //             document.write(emoji);
+        //         }
+        //         document.write("<br>");
+        //     }
+        // }
+        // pyramid(emoji, row);
+
+        // (3) 화살표함수
+        let pyramid = (emoji, row) => {
+            for(let i=1; i<=row; i++) {
+                for(let j=1; j<=i; j++) {
+                    document.write(emoji);
+                }
+                document.write("<br>");
+            }
+        }
+        pyramid(emoji, row);
+
+    </script>
+</body>
+</html>

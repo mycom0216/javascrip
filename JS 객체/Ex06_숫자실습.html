@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="spanTag">0</span>
+    <br>
+    <button onclick="plusFunc()">증가</button>
+    <button>감소</button>
+    <script>
+        // 수정해야할 span 요소 가져오기
+        let spanVal = document.getElementById("spanTag");
+        console.log(spanVal);
+        // 증가 버튼 클릭 시
+        let plusFunc = () => {
+            // console.log(Number(spanVal.innerText) + 1);
+            spanVal.innerText = Number(spanVal.innerText) + 1;
+        }
+        // 감소 버튼 클릭 시
+        
+        // (단 0이상일 때)
+
+    </script>
+</body>
+</html>

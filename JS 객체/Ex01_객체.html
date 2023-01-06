@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 구조 : key + value
+        // obj = {key : value, key1 : value1, ...}
+        // key : 객체의 속성(property)
+        // value : 속성의 값, 기본자료형~함수
+        // 객체 생성
+        let person = {
+            "name" : "반재영",
+            age : 20,
+            male : true,
+            intro : function () {
+                console.log("😎");
+            },
+            favorite : {
+                food : "steak",
+                drink : "cola"
+            },
+            smhrd : ["운비","수현","경남","영표"]
+        };
+
+        // 객체 접근
+        console.log(person);
+        console.log("이름 : ",person.name);
+        console.log("나이 : ",person.age);
+        console.log("남성 : ",person.male);
+        person.intro();
+        console.log("좋아하는 음식 :", person.favorite.food);
+        console.log("담임선생님 :", person.smhrd[0], "😎");
+
+        // 속성값 변경 및 추가
+        person.name = "장원영";
+        console.log("이름 변경 : ", person.name);
+
+        person.height = 170;
+        console.log("키 : ", person.height);
+    </script>
+</body>
+</html>
