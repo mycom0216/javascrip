@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pTag">저를 변경해주세요!</p>
+    <button onclick="clickFunc()">변경!</button>
+    <script>
+        // 버튼 클릭 시, p태그의 스타일을 변경!
+        let clickFunc = () => {
+            // let pVal = document.getElementById('pTag');
+            let pVal = document.querySelector('p');
+            pVal.style.color = 'red';
+            pVal.style.background = 'black';
+            // background
+        }
+    </script>
+</body>
+</html>

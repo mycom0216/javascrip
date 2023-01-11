@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMjlfMTMz%2FMDAxNjY5NzAzMTA1Nzc1.ZhMoLf_bLRTqIAeot-wxWGLmQvEc8V9FxkpQscCVDvAg.bcQgbcho6cX_0ty05xErPzfK-S_QZGkydyiu11w_15gg.JPEG.hoon0482%2F20221101%25A3%25DF152117.jpg&type=sc960_832" 
+    width="300px" id="img1" alt="">
+    <br>
+    <button onclick="ch()">이미지변경</button>
+
+    <script>
+        let src1 = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMjlfMTMz%2FMDAxNjY5NzAzMTA1Nzc1.ZhMoLf_bLRTqIAeot-wxWGLmQvEc8V9FxkpQscCVDvAg.bcQgbcho6cX_0ty05xErPzfK-S_QZGkydyiu11w_15gg.JPEG.hoon0482%2F20221101%25A3%25DF152117.jpg&type=sc960_832"
+        let src2 = "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimg.etimg.com%2Fthumb%2Fmsid-76173969%2Cwidth-1070%2Cheight-580%2Cimgsize-1099506%2Coverlay-etpanache%2Fphoto.jpg&type=sc960_832"
+        let ch = () => {
+            // img 요소를 가져오기
+            // let imgNum1 = document.getElementById("img1");
+            // let imgNum1 = document.querySelector('img');
+            // let imgNum1 = document.querySelector('#img1');
+            let imgNum1 = document.querySelectorAll('img')[0];
+            // 만약 img src가 1번이라면?
+            if(imgNum1.src == src1) {
+                // src를 2번으로 해주고
+                imgNum1.src = src2;
+            } else {
+                // 그게 아니라면 1번으로 해줘!
+                imgNum1.src = src1;
+            }
+            // imgNum1.src = src2
+        }
+    </script>
+</body>
+</html>
