@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 1~10 사이의 랜덤수 선정
+        // Math.random() : 0과 1사이의 실수 -> 1은 포함X
+        // Math.floor() : 내림
+        var random_num = Math.floor((Math.random()*10)+1);
+        console.log(random_num);
+
+        // 4. 반복문으로 묶어주기! -> 반복횟수를 모르니까 while문 사용
+        while(true){
+        // 2. 입력받기 -> 형변환
+        var input_num = parseInt(prompt("1부터 10사이의 숫자를 입력하세요"));
+
+        // 3. 입력받은 숫자 랜덤수와 비교해서 alert로 출력
+        // 경우의 수 3가지 : 같을 때, 작을 때, 클 때 -> 조건문 사용해서 비교
+        if(random_num == input_num){
+            alert("정답입니다! 축하합니다!");
+            break; // 정답일 때 반복문 탈출
+        }else if(random_num < input_num){
+            alert("입력한 숫자보다 작은 수 입니다.");
+        }else{
+            alert("입력한 숫자보다 큰 수 입니다.");
+        }
+
+    }
+    </script>
+</body>
+</html>

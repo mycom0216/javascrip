@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1. head 내 작성 
+            - 문서를 초기화하거나 설정을 주로하는 가벼운 스크립트들을 작성
+            - 무거운 스크립트가 있을 경우에는 랜더링에 방해가 되어서 로딩화면이 오래걸림
+            - 랜더링 : html, js, css 등 개발자가 작성한 문서가 브라우저에 출력되는 과정-->
+    <script>
+        document.querySelector('h1').style.color = 'orange';
+    </script>
+
+    <!-- - 코드는 위에서 아래로 실행이 되는데, 아직 h1태그가 생성이 안되었는데
+            색을 바꾸라고 해서 실행이 안되는 것!
+         - 이벤트를 추가해서 동작시키게 만들 것! -->
+</head>
+<body>
+    <h1>반재영</h1>
+    <!-- 2. 끝나는 body태그 앞에 작성 : 추천하는 스크립트 위치-->
+</body>
+</html>

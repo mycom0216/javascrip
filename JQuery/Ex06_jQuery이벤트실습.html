@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <a>유튜브로이동</a>
+    <br>
+    <button onclick="change()">클릭</button>
+    <script>
+        // jQuery로 진행할 것!
+        // 1. 버튼 클릭 시 body에 a태그(유튜브)를 추가하시오
+        // 2. 마우스로 a태그를 더블 클릭하면 링크가 걸리도록 만드시오 -> 유튜브
+        // 3. a태그에 마우스를 올리면 색깔은 tomato 글씨크기는 50px 굵기는 bold로 바꾸시오
+        // 4. 마우스를 내리면 a태그를 사라지게 만드시오
+        function change(){
+            $('a').css('color', 'tomato');
+        }
+        var a = $('a').html();
+        console.log(a);
+        $('a').html('<a>유튜브로이동</a>');
+        $('a').css('color','tomato','height:50px');
+        $('a').attr('href',"https://www.youtube.com");
+
+    </script>
+</body>
+</html>
